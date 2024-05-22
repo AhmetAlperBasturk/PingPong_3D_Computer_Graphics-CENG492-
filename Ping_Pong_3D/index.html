@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Game</title>
+		<style>
+			body {
+				background-color: #ffcbdb;
+			}
+			#gameCanvas {
+				background-color: #d84470;
+				width: 840px;
+				height: 360px;
+				margin: auto;
+				
+			}
+			h3 {
+			color: black
+			}
+			#scoreboard {
+				text-align: center;
+				font-family: Segoe UI, Helvetica, Ubuntu, sans-serif;
+				color: white;
+			}
+			#scores {
+				font-size:600%; 
+				padding:0; 
+				margin:0;
+				color: white;
+			}
+			#title {
+				background-color: #ffcbdb;
+				color: black;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body onload='setup();'>
+		<h1 id='title'>3D PINGPONG</h1>
+
+		<div id='gameCanvas'></div>
+		<script src='./Scripts/three.min.js'></script>
+		<script src='./Scripts/keyboard.js'></script>
+		<script src='./Scripts/game.js'></script>
+		<div id='scoreboard'>
+			<h1 id='scores'>0-0</h1>
+			<h2 id='winnerBoard'></h2>
+			<h3>First Player => A- move left,D - move right
+			<br> Second Player =>  LeftArrow- move left,
+			 RightArrow- move right</h3>
+
+		</div>
+	</body>
+</html>
