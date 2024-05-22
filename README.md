@@ -1,2 +1,1 @@
-WebGL
-2 player
+WebGL - 2 player
